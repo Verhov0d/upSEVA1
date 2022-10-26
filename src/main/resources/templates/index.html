@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Калькулятор</h1>
+<form action="/" method="post">
+    <input type="number" placeholder="Первое число" name="a"> <br>
+    <input type="number" placeholder="Второе число" name="b"> <br>
+    <label>Выберите действие:</label> <br>
+    <input type="radio" name="deystv" value="+">+<br>
+    <input type="radio" name="deystv" value="-">-<br>
+    <input type="radio" name="deystv" value="*">*<br>
+    <input type="radio" name="deystv" value="/">/<br>
+    <br>
+    <input type="submit" value="Получить результат">
+</form>
+<h1 th:text="${result}"></h1>
+</body>
+</html>
